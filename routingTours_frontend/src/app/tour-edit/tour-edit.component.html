@@ -1,0 +1,37 @@
+<div class="border">
+    <form #tourform="ngForm"
+        (ngSubmit)="formSubmit(tourform.value)">
+        <div class="form-element"> 
+            <label  for="name"> Tour name:</label><br/>
+            <input type="text" [(ngModel)]="editTour.name"
+                name="name" required minlength="7" #name="ngModel" >
+                <div class="error" *ngIf="name.errors" [style.display]="(name.valid || name.pristine) ? 'none' : 'flex'">
+                    <p *ngIf="name.errors.required">
+                        "Name" field obligatory has to be filled
+                    </p>
+                    <p *ngIf="name.errors.minlength">
+                        "Name" field must be longer than 7 characters
+                    </p>
+                </div>
+        </div>
+        <div class="form-element"> 
+            <label  for="name"> Country Tour:</label><br/>
+            <input type="text" [(ngModel)]="editTour.country" required maxlength="30"
+                name="country" #name="ngModel">
+        </div>
+        <div class="form-element"> 
+            <label  for="name"> Cost Tour:</label><br/>
+            <input type="number" [(ngModel)]="editTour.cost"
+                name="cost">
+        </div>
+        <div class="form-element"> 
+            <label  for="name"> Days:</label><br/>
+            <input type="number" [(ngModel)]="editTour.days"
+                name="days" required> 
+        </div>
+        <div class="form-element">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+

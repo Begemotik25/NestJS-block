@@ -1,0 +1,44 @@
+div.border {
+    border: solid 1px black;
+    margin: 10px;
+    padding: 10px;
+}
+div.form-element {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    
+    input[type="text"] {
+        margin-top: 5px;
+        border-radius: 5px;
+        font-size: 1.1em;
+    }
+    input[name="country"] {
+        width: 450px;
+    }
+    input[name="cost"] {
+        width: 450px;
+    }
+    input[name="days"] {
+        width: 450px;
+    }
+    button {
+        font-size: 1.2em;
+    }
+}
+input.ng-invalid {
+    border-bottom: solid 6px red;
+}
+div.error {
+    justify-content: center;
+    p{
+        color: red;
+        border: solid 2px red;
+        border-radius: 10px;
+        background-color: pink;
+        margin-top: 5px;
+        max-width: 250px;
+        font-size: 0.75em;
+        padding: 5px;
+    }
+}

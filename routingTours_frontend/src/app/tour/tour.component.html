@@ -1,0 +1,11 @@
+<div *ngIf="tour">
+    <h2> Selected tour</h2>
+    <div class="tour">
+        <h3>Name: {{tour.name}}</h3>
+        <h4>Country: {{tour.country}}</h4>
+        <h5>Cost: {{tour.cost}}</h5>
+        <h6>Days: {{tour.days}}</h6>
+    </div>
+    <button class="button" (click)="goBack()">Back</button>
+    <button class="button1" (click)="edit()">Edit</button>
+</div> 

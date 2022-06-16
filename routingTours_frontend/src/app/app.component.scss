@@ -1,0 +1,14 @@
+nav a {
+    text-decoration: none;
+    transition: all 0.5s;
+    color: blue;
+    font-size: 1.2em;
+    margin: 5px;
+  }
+  
+  nav a.active{
+    border-radius: 3px;
+    padding: 2px 8px;
+    background-color: blue;
+    color: white;
+  }

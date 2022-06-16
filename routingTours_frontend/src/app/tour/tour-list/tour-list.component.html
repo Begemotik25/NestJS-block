@@ -1,0 +1,10 @@
+<h2>Tours list: </h2>
+<ul class="phrases">
+    <li *ngFor="let tour of tours"
+        (click)="selectTour(tour.id)"
+        [class.selected] = "tour.id == selectedId">
+        {{tour.name}}
+    </li>
+</ul>
+<router-outlet></router-outlet>
+
